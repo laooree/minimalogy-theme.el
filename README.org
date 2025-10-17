@@ -1,0 +1,46 @@
+#+title: Minimalogy Theme
+#+author: laooree
+#+description: A GNU Emacs theme with multiple color schemes, with a reduced color count.
+
+This theme tries to minimize the number of colors used, avoiding the Christmas-tree effect (which I find distracting and cognitively demanding) that Nicolas P. Rougier talks about in [[https://arxiv.org/pdf/2008.06030][this paper]].
+The theme is using a reduced set of colors as faces, as done in [[https://github.com/rougier/nano-theme][N Λ N O Theme]]. The flagship color scheme, Understory, is heavily based on [[https://github.com/daut/miasma-theme.el][Miasma theme]].
+
+* Installation
+
+
+** Using =use-package=
+You can use Emacs =vc-use-package= to install it from github:
+#+begin_src emacs-lisp
+  (use-package minimalogy-theme
+    :ensure t
+    :vc (:url "https://github.com/laooree/minimalogy-theme.el")
+    :config
+    (setq minimalogy-color-scheme 'understory)
+    (load-theme 'minimalogy :no-confirm-loading))
+#+end_src
+
+Alternatively, you can download the theme file and then:
+#+begin_src emacs-lisp
+  (use-package minimalogy-theme
+    :ensure nil
+    :load-path "~/.emacs.d/themes/"
+    :config
+    (setq minimalogy-color-scheme 'understory)
+    (load-theme 'minimalogy :no-confirm-loading))
+#+end_src
+
+** Manual
+Download the theme file, then:
+#+begin_src emacs-lisp
+  (add-to-list 'custom-theme-load-path (concat user-emacs-directory "/themes/"))
+  (setq minimalogy-color-scheme 'understory)
+  (load-theme 'minimalogy t)
+#+end_src
+
+* Usage
+To change the color scheme, you can set the variable =minimalogy-color-scheme=. Currently, only the flagship color scheme is supported:
+- ='understory=
+
+* Screenshots
+[[./screenshots/org-mode.png]]
+[[./screenshots/theme.png]]
