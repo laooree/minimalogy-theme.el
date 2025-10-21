@@ -584,10 +584,15 @@
    `(evil-ex-substitute-matches      ((t (:strike-through t))))
    `(evil-ex-substitute-replacement  ((t (:inherit minimalogy-default-i))))
 
+
    ;;;;; flymake ;;;;;
    `(flymake-error    ((t (:underline (:style wave :color ,minimalogy-ac2)))))
    `(flymake-warning  ((t (:underline (:style wave :color foreground-color)))))
    `(flymake-note     ((t (:underline (:style wave :color ,minimalogy-pl)))))
+
+
+   ;;;;; beacon ;;;;;
+   `(beacon-fallback-background  ((t (:foreground ,minimalogy-fg))))
    ))
 
 ;; Apply the theme
