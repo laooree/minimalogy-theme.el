@@ -596,7 +596,7 @@
 
 
    ;;;;; matlab-mode ;;;;;
-   `(matlab-sections-highlight-face  ((t (:background ,minimalogy-bg1))))
+   `(matlab-sections-highlight-face  ((t (:background ,minimalogy-bg1 :extend t))))
    ))
 
 ;; Apply the theme
