@@ -593,6 +593,10 @@
 
    ;;;;; beacon ;;;;;
    `(beacon-fallback-background  ((t (:foreground ,minimalogy-fg))))
+
+
+   ;;;;; matlab-mode ;;;;;
+   `(matlab-sections-highlight-face  ((t (:background ,minimalogy-bg1))))
    ))
 
 ;; Apply the theme
