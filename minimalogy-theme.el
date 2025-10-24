@@ -227,7 +227,7 @@
    `(show-paren-match              ((t (:inherit minimalogy-strong))))
    `(show-paren-mismatch           ((t (:inherit minimalogy-critical))))
    `(lazy-highlight                ((t (:inherit minimalogy-subtle))))
-   `(trailing-whitespace           ((t (:inherit minimalogy-subtle))))
+   `(whitespace-trailing           ((t (:background ,minimalogy-ac2))))
    `(secondary-selection           ((t (:inherit minimalogy-subtle))))
    `(completions-annotations       ((t (:inherit minimalogy-pale))))
    `(completions-common-part       ((t (:inherit minimalogy-strong))))
