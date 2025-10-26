@@ -1,4 +1,4 @@
-;;; minimalogy-theme.el --- Minimalogy: an GNU Emacs theme with multiple color schemes, with a reduced color count.
+;;; minimalogy-theme.el --- Minimalogy: a GNU Emacs theme with multiple color schemes, with a reduced color count. -*- lexical-binding:t -*-
 ;; Author: laooree
 
 ;; This program is free software; you can redistribute it and/or modify
